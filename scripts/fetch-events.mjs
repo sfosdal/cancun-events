@@ -25,7 +25,7 @@ import { writeFileSync, readFileSync } from 'node:fs';
 import { buildIcs } from './ics.mjs';
 import { dropTimeClashes, isChurch } from './sources.mjs';
 import { feedSources, emptyListGate } from './feeds.mjs';
-import { mergeWithArchive, unionArchives } from './merge.mjs';
+import { mergeWithArchive, unionArchives, eventKey } from './merge.mjs';
 import { calmTitle, isNotice } from './titles.mjs';
 import { applySchedules } from './schedules.mjs';
 import { slugify, BADGE_FEEDS, TEAMS, CITY } from './badges.mjs';
@@ -174,7 +174,7 @@ const fresh = all
   .filter((e) => e.date && e.date >= cutoff && e.date <= horizon)
   .filter((e) => !isNotice(e.title)) // a closure or construction notice is information, not an event
   .map((e) => ({ ...e, title: calmTitle(e.title) })) // shouted titles come down to Title Case
-  .filter((e) => { const k = `${e.venue}|${e.title}|${e.date}`; if (seen.has(k)) return false; seen.add(k); return true; });
+  .filter((e) => { const k = eventKey(e); if (seen.has(k)) return false; seen.add(k); return true; }); // venue|title|date|clock (merge.mjs): a second showing on one day is kept
 // the empty-list gate (feeds.mjs): nothing upcoming in this build's own pull means a room was
 // missed or every source is down — say so and stop rather than publish an empty calendar
 if (!emptyListGate(fresh, today, sources.length)) process.exit(1);
