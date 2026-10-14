@@ -1,0 +1,63 @@
+{
+ "_": "Each club's postseason for the season in hand — the rounds, their dates and the final's site — shown in the Teams view as 'if they qualify' until the real games arrive (the schedules flag those playoff: true, and a round with a real game in its window gives way to it). Hand-kept: update each season from the leagues' announcements. tbd: true marks a round whose dates are the usual calendar, not yet announced. Cancún's two clubs, written 2026-10-13: the LMB's 2026 postseason is over (the Tigres' 2027 rounds are the usual calendar), the Liga de Expansión's Apertura 2026 liguilla is the usual late-November calendar.",
+ "tigres": {
+  "season": "2027",
+  "rounds": [
+   {
+    "name": "Zona Sur first round",
+    "start": "2027-08-10",
+    "end": "2027-08-20",
+    "tbd": true
+   },
+   {
+    "name": "Zona Sur semifinals",
+    "start": "2027-08-22",
+    "end": "2027-09-01",
+    "tbd": true
+   },
+   {
+    "name": "Zona Sur final",
+    "start": "2027-09-03",
+    "end": "2027-09-12",
+    "tbd": true
+   },
+   {
+    "name": "Serie del Rey",
+    "start": "2027-09-14",
+    "end": "2027-09-24",
+    "tbd": true,
+    "final": true
+   }
+  ]
+ },
+ "cancunfc": {
+  "season": "Apertura 2026",
+  "rounds": [
+   {
+    "name": "Play-in",
+    "start": "2026-11-17",
+    "end": "2026-11-19",
+    "tbd": true
+   },
+   {
+    "name": "Quarterfinals",
+    "start": "2026-11-24",
+    "end": "2026-11-29",
+    "tbd": true
+   },
+   {
+    "name": "Semifinals",
+    "start": "2026-12-01",
+    "end": "2026-12-06",
+    "tbd": true
+   },
+   {
+    "name": "Final",
+    "start": "2026-12-08",
+    "end": "2026-12-13",
+    "tbd": true,
+    "final": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#0f2a3a"/>
+  <!-- Cancún: a low sun over the Caribbean, the hotel strip's sand bar, the lagoon behind it -->
+  <circle cx="22" cy="10.5" r="4.4" fill="#f6b85a"/>
+  <rect x="2" y="15" width="28" height="9" fill="#1aa3b8"/>
+  <rect x="2" y="15" width="28" height="3" fill="#36c3d6" opacity=".85"/>
+  <rect x="4" y="19.4" width="8" height="1.1" rx=".55" fill="#bff0f7" opacity=".7"/>
+  <rect x="16" y="21.4" width="10" height="1.1" rx=".55" fill="#bff0f7" opacity=".55"/>
+  <path d="M2 24 Q 10 22.6 16 23.4 T 30 24 L30 29 L2 29 Z" fill="#f3e2b8"/>
+  <path d="M8 23.6 C 8 20.2 10.6 18.6 10.6 18.6 C 10.6 18.6 9.1 20.8 9.4 23.6 Z" fill="#2f7a4c"/>
+  <path d="M8.4 23.6 C 6.2 21.2 4.4 21 4.4 21 C 4.4 21 6.9 20.4 8.9 22.8 Z" fill="#3f9a5e"/>
+  <path d="M8.4 23.6 C 10.4 21.4 12.6 21.2 12.6 21.2 C 12.6 21.2 10.2 20.4 8.3 22.8 Z" fill="#3f9a5e"/>
+</svg>
