@@ -1,5 +1,6 @@
 {
   "_": "Off-season blurbs for the Teams view's form block (app.js renderTeamForm): shown before a season starts and once one is well over. Plain text, one per team slug. Edit freely — nothing generates this file.",
   "tigres": "The Mexican League season runs April to August at the Estadio Beto Ávila, with the Zona Sur playoffs into September; the 2027 schedule fills in above once the league publishes it.",
-  "cancunfc": "Cancún FC's Liga de Expansión year is two short seasons — the Apertura from August to December and the Clausura from January to May — at the Estadio Andrés Quintana Roo, with the liguilla beyond each for the top eight."
+  "cancunfc": "Cancún FC's Liga de Expansión year is two short seasons — the Apertura from August to December and the Clausura from January to May — at the Estadio Andrés Quintana Roo, with the liguilla beyond each for the top eight.",
+  "elcalor": "The LNBP season runs August to October at the Poliforum Benito Juárez, 28 games against the league's thirteen other clubs, with the playoffs into November for the top eight; the next schedule fills in above once the league publishes it."
 }

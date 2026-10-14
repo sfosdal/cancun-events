@@ -40,9 +40,6 @@
   //             the club's ticket page
   //   club      the club's full name; wiki the article; opens when the
   //             season usually starts
-  // El Calor de Cancún (LNBP basketball, Poliforum Benito Juárez) has no
-  // readable schedule yet — the league's backend refuses scripted calls — so
-  // it is not listed; see README "Follow-ups".
   var TEAMS = [
     // Tigres de Quintana Roo, Liga Mexicana de Béisbol (Zona Sur), Estadio Beto Ávila — the season runs April to August, the playoffs into September
     { slug: 'tigres', label: 'Tigres', name: 'Tigres de Quintana Roo', abbr: 'QR', re: /\btigres\b/i, sport: 'baseball', venue: 'Estadio Beto Ávila', colors: ['#f47a20', '#1d1d1b'],
@@ -56,6 +53,12 @@
       inject: { url: 'https://www.cancunfc.mx/' },
       logo: 'https://www.cancunfc.mx/cdn/shop/files/LOGO_CANCUN_FC_e4b405fa-468d-460e-9b72-eec145293eaf.png', schedule: 'https://www.cancunfc.mx/', // ESPN has no crest for the club; this is its own
       club: 'Cancún FC', opens: 'August', wiki: { title: 'Cancún F.C.', club: true } },
+    // El Calor de Cancún, LNBP (Liga Nacional de Baloncesto Profesional, the national league, 14 clubs; the season runs August to October, the playoffs into November), Poliforum Benito Juárez — the league's backend, read with the site's own ajax headers (scripts/lnbp.mjs)
+    { slug: 'elcalor', label: 'El Calor', name: 'El Calor de Cancún', abbr: 'CAL', re: /\bel calor\b/i, sport: 'basketball', venue: 'Poliforum Benito Juárez', colors: ['#f7941d', '#b5121b'],
+      season: { kind: 'lnbp', id: 47 }, form: { kind: 'lnbp', id: 47 },
+      inject: { url: 'https://www.facebook.com/profile.php?id=61557431365955' }, // no ticketer carries the arena; the club sells through its Facebook page
+      logo: 'https://lnbpback.truewisdom.co/uploads/team/logo/e90600851abba86ac6fd7f6ecfa065b5.png', schedule: 'https://lnbp.mx/calendar.html', // the league's crest for the club (the backend serves it)
+      club: 'El Calor de Cancún', opens: 'August', wiki: { title: 'El Calor de Cancún', club: true } },
   ];
 
   // The venues. Keys are the display names the feeds are folded to. Per venue:
@@ -138,7 +141,7 @@
       icon: 'https://www.google.com/s2/favicons?domain=www.cancunfc.mx&sz=128',
       alias: /andr[eé]s quintana roo/i,
     },
-    'Poliforum Benito Juárez': { // the city arena on the airport road (basketball 4,800, concerts 6,000) — El Calor's home; no feed yet, the row waits for one
+    'Poliforum Benito Juárez': { // the city arena on the airport road (basketball 4,800, concerts 6,000) — El Calor's home; the LNBP schedule supplies the home games, nothing else lists the room yet
       capacity: 6000,
       type: 'sports',
       cssVar: '--v-poli',
@@ -196,7 +199,7 @@
   var REGISTRY = [
     ['venue', 'Teatro de Cancún'], ['venue', 'Plaza de Toros Cancún'], ['venue', 'Teatro de la Ciudad'], ['venue', 'Teatro Alamos'], ['venue', 'STOA Auditorio'], ['venue', 'Estadio Beto Ávila'], ['venue', 'Estadio Andrés Quintana Roo'], ['venue', 'Poliforum Benito Juárez'], ['venue', 'Elsewhere in Cancún'], ['venue', 'Teatro de la Ciudad, Playa del Carmen'],
     ['badge', 'concert'], ['badge', 'sports'], ['badge', 'arts'], ['badge', 'community'],
-    ['team', 'tigres'], ['team', 'cancunfc'],
+    ['team', 'tigres'], ['team', 'cancunfc'], ['team', 'elcalor'],
     ['cap', 'stadium'], ['cap', 'arena'], ['cap', 'hall'], ['cap', 'room'],
   ];
 
