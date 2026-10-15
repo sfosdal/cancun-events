@@ -1,56 +1,53 @@
-# Port Angeles Events
+# Cancún Events
 
-Event feed and calendar for Port Angeles, WA and the north Olympic Peninsula:
-the Clallam County Fairgrounds, Civic Field (the Lefties' ballpark), the Port
-Angeles High School Performing Arts Center, 7 Cedars Casino in Sequim, and in
-Port Townsend Fort Worden and the Jefferson County Fairgrounds — with the
-Seattle clubs' seasons (Seahawks, Mariners, Kraken, Storm, Reign, Sounders) in
-a Teams view.
+Event feed and calendar for Cancún, Quintana Roo: the Teatro de Cancún in the
+Hotel Zone, the Plaza de Toros concert bowl, the Teatro de la Ciudad, Teatro
+Alamos and the STOA auditorium, the Estadio Beto Ávila, the Estadio Andrés
+Quintana Roo and the Poliforum, Playa del Carmen's municipal theatre an hour
+down the coast — with the home clubs' seasons (the Tigres de Quintana Roo,
+Cancún FC, El Calor) in a Teams view.
 
-Live at **https://portangeles.here.events/** once the domain is wired (GitHub
-Pages, built by the Actions workflow once a day at noon Pacific).
+Live at **https://cancun.here.events/** (GitHub Pages, built by the Actions
+workflow once a day at noon — Quintana Roo keeps no daylight time).
 
-A sister of lqa-events, built the way Forks and Everett were: everything
-that makes this Port Angeles's is `site/city.js` (every team, venue, type,
-default, share-code registry and string), `site/index.html`,
-`scripts/fetch-events.mjs` (the sources), `site/embed.js`, `outlook.json`,
-`scripts/data/postseason.json`, `channels.json`, `scripts/feeds.mjs` (shared: the venue-feed adapters), the manifest and icons (the
-Olympic ridge over the strait, rendered from `favicon.svg`). Everything else is
+A sister of lqa-events, the first city outside the US and the first with no
+Ticketmaster: everything that makes this Cancún's is `site/city.js` (every
+team, venue, type, default, share-code registry, string and Mexico's
+holidays), `site/index.html`, `scripts/fetch-events.mjs` (the sources),
+`scripts/lnbp.mjs` (El Calor's league), `site/embed.js`, `outlook.json`,
+`scripts/data/postseason.json`, `channels.json`, the manifest and icons.
+`scripts/feeds.mjs` (the ticketer and venue-feed adapters) is shared with the
+sister sites and lqa-events is its source of truth. Everything else is
 lqa-events' own, byte for byte — copy from there, never edit here.
 
 ## Embed
 
 ```html
-<div id="portangeles-events"></div>
-<script src="https://portangeles.here.events/embed.js" data-max="8" defer></script>
+<div id="cancun-events"></div>
+<script src="https://cancun.here.events/embed.js" data-max="8" defer></script>
 ```
 
 ## Sources
 
-- **Field Arts & Events Hall** — its own calendar (WordPress, The Events Calendar REST at
-  fieldhallevents.org/wp-json/tribe/events/v1/events) through `scripts/feeds.mjs` (city.js `feed`):
-  every show in the Donna M. Morris Theater and the Sunset Lounge; the daily 'Box Office Open'
-  and gallery-hours rows are left out. Tickets sell on Ludus (fieldhall.ludus.com); sold-out
-  status is not read yet.
-- **Ticketmaster Discovery API** — every room by its venue id (every page):
-  six rooms, in town to an hour east. The peninsula rooms carry only the odd
-  tour date — the first build (2026-10-13) found nothing upcoming at any of
-  them. There is no city sweep (a radius search from here reaches Victoria
-  across the strait first). Church events are left out (`isChurch`). Calls are
-  paced 1.5 s apart with a 429 back-off, since the sister builds share the key.
-- **Seasons** — ESPN for the Seahawks, Storm, Reign and Sounders; MLB's stats
-  API for the Mariners; the NHL's for the Kraken (`scripts/schedules.mjs`,
-  shared with lqa). The clubs are Teams-view-only: their grounds are not rooms
-  here and nothing of theirs enters the listing.
-
-Next to add: the Juan de Fuca Festival, the Port Angeles Symphony and the
-Lefties' West Coast League schedule, once one of them publishes something
-parseable.
+- **TusBoletos** (tusboletos.mx, the peninsula's ticketer) — its city-wide
+  listing through `scripts/feeds.mjs` (city.js `feeds`, kind `tusboletos`):
+  the Teatro de Cancún, Teatro Alamos, STOA, Playa's theatre and the odd
+  hotel ballroom; the clock and the showings are read from each event page.
+  Rooms fold onto their rows by alias; anything else lands in "Elsewhere in
+  Cancún".
+- **eticket** (eticket.mx) — its Cancún listing's schema.org Event markup
+  (kind `jsonld`): the Plaza de Toros and the touring Mexican acts; sold-out
+  and cancelled states come with it.
+- **Seasons** — MLB's stats API (sportId 23, the Mexican League) for the
+  Tigres, ESPN for Cancún FC (Liga de Expansión), the LNBP's own site for El
+  Calor (`scripts/lnbp.mjs`); the clubs' home games are injected into the
+  listing under their box-office links, since no ticketer lists them.
+- Church events are left out (`isChurch`). There is no Ticketmaster call and
+  no key to set.
 
 ## Local run
 
 ```sh
-cp .env.example .env   # TICKETMASTER_API_KEY=…
 ALLOW_NO_ARCHIVE=1 node scripts/fetch-events.mjs   # ALLOW_NO_ARCHIVE only until the site has published once
 node --test scripts/*.test.mjs
 ```
