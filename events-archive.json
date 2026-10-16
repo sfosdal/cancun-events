@@ -506,6 +506,20 @@
    "time": "19:15:00",
    "url": "https://www.facebook.com/profile.php?id=61557431365955",
    "type": "sports"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Una Eva y Tres Galanes",
+   "date": "2026-10-15",
+   "time": "18:30",
+   "url": "https://www.tusboletos.mx/evento/una-eva-y-tres-galanes-cancun"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Una Eva y Tres Galanes",
+   "date": "2026-10-15",
+   "time": "21:00",
+   "url": "https://www.tusboletos.mx/evento/una-eva-y-tres-galanes-cancun"
   }
  ]
 }
