@@ -528,6 +528,21 @@
    "time": "19:00",
    "url": "https://www.tusboletos.mx/evento/reencarnacion-mito-o-verdad-cancun",
    "type": "arts"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "El Show de Teo González",
+   "date": "2026-10-17",
+   "time": "20:00",
+   "url": "https://www.tusboletos.mx/evento/el-show-de-teo-gonzalez-cancun"
+  },
+  {
+   "venue": "Estadio Andrés Quintana Roo",
+   "title": "Cancún FC vs Venados FC",
+   "date": "2026-10-17",
+   "time": "20:00:00",
+   "url": "https://www.cancunfc.mx/",
+   "type": "sports"
   }
  ]
 }
