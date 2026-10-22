@@ -19,7 +19,8 @@
      hues, less glare, so the stripes and ticks read after the titles */
   --v-tdc: #2e8f9e; --v-toros: #9e2e3e; --v-ciudad: #6a2e9e; --v-alamos: #9e6b2e; --v-stoa: #9e2e7a; --v-beto: #c2521f; --v-aqr: #2e9e4a; --v-poli: #2e5a9e; --v-else: #7c8a96; --v-playa: #2e9e8b; /* the rooms, one hue each (city.js cssVar): the sea and the reef cool, the bullring and the ballpark warm */
   --venue-text: 72%;     /* how much of the venue hue the card's venue label keeps (light mode) */
-  --tint: 26%;           /* the venue wash behind each card (light mode; 13% in the dark palette) */
+  --tint: 26%;           /* the venue wash behind a series card (light mode; 13% in the dark palette) */
+  --row-a: #f3f6f8; --row-b: #d6dde3; /* the list's rows alternate light and dark grey; only a series keeps its venue's hue (Steve, 2026-10-20) */
   /* event-type hues (calendar ticks, agenda right edge): concerts salmon and
      arts crimson keep clear of the brand orange; movies slate = "quiet" */
   --t-concert: #d9664f;
@@ -56,6 +57,7 @@
     --line: #333f4a; --gold: #f08a33; --gold-soft: #3a2a1a;
     --v-tdc: #86dcea; --v-toros: #ea8695; --v-ciudad: #b486ea; --v-alamos: #eabc86; --v-stoa: #ea86cf; --v-beto: #f0a07a; --v-aqr: #86ea9f; --v-poli: #86aeea; --v-else: #aebac4; --v-playa: #86ead9;
     --venue-text: 100%; --tint: 13%;
+    --row-a: #1e252c; --row-b: #2c343c;
     --t-concert: #f0806a; --t-sports: #f2d21b; --t-arts: #d63a4f;
     --t-movie: #8b9db0; --t-community: #e660a8; --t-expo: #4fd1c5; --t-bar: #e3ad3c; --alert: #ff4b3e;
     --bug-bg: #2b2d30; --bug-frame: #c9cdd2; --bug-ink: #f4f4f4; --bug-soft: #d5d8dc; --bug-dim: #b9bec4; --bug-rowline: #5c6167; --bug-off: #6a6d72; --bug-muted: #4a4f56; --bug-score-bg: #fafafa; --bug-shadow: rgba(0, 0, 0, .35); --bug-redzone: #ff7b7b;
@@ -71,6 +73,7 @@
   --line: #333f4a; --gold: #f08a33; --gold-soft: #3a2a1a;
   --v-tdc: #86dcea; --v-toros: #ea8695; --v-ciudad: #b486ea; --v-alamos: #eabc86; --v-stoa: #ea86cf; --v-beto: #f0a07a; --v-aqr: #86ea9f; --v-poli: #86aeea; --v-else: #aebac4; --v-playa: #86ead9;
   --venue-text: 100%; --tint: 13%;
+  --row-a: #1e252c; --row-b: #2c343c;
   --t-concert: #f0806a; --t-sports: #f2d21b; --t-arts: #d63a4f;
   --t-movie: #8b9db0; --t-community: #e660a8; --t-expo: #4fd1c5; --t-bar: #e3ad3c; --alert: #ff4b3e;
   --bug-bg: #2b2d30; --bug-frame: #c9cdd2; --bug-ink: #f4f4f4; --bug-soft: #d5d8dc; --bug-dim: #b9bec4; --bug-rowline: #5c6167; --bug-off: #6a6d72; --bug-muted: #4a4f56; --bug-score-bg: #fafafa; --bug-shadow: rgba(0, 0, 0, .35); --bug-redzone: #ff7b7b;
@@ -746,7 +749,9 @@ button.cal-day:hover { background: color-mix(in srgb, var(--ink) 10%, var(--mist
   letter-spacing: .06em; color: var(--ink-soft); line-height: 1; /* "WEDNESDAY" fits the rail; line-height 1 like the clock's PM */
 }
 .day-events { display: grid; gap: .6rem; align-content: start; }
-/* each row carries a whisper of its venue's color (set inline by app.js) */
+.agenda .day-events > .ev { background: var(--row-a); } /* the list only: the Teams schedule keeps its home-game wash */
+.agenda .day-events > .ev:nth-child(even) { background: var(--row-b); }
+/* a series row carries a whisper of its venue's color (set inline by app.js); the rest are the greys above */
 .ev { display: flex; gap: .8rem; align-items: flex-start; padding: .45em .55em; border-radius: 6px; position: relative; overflow: hidden; }
 .ev-body { display: flex; flex-direction: column; align-items: flex-start; gap: .18rem; min-width: 0; }
 .ev-title { display: flex; align-items: center; gap: .45rem; min-width: 0; }
