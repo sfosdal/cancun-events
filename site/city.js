@@ -213,10 +213,10 @@
 
   var WORDS = {
     teamCity: 'Cancún', // the board drops it from the clubs' names ("Cancún FC" keeps its own two words — the regex is a whole-word match)
-    presetDefault: 'Every room — Cancún and Playa del Carmen — every team and type',
+    presetDefault: 'Every venue — Cancún and Playa del Carmen — every team and type',
     presetNeighborhood: 'Cancún only — the Hotel Zone theatre, the bullring, the mainland halls and the two grounds',
     presetBig: 'Only the places that hold 2,000 or more — the bullring, the arena and the two grounds',
-    phrases: { all: 'Showing everything.', none: 'Showing nothing yet — open Filter and pick some venues.', neighborhood: 'Showing Cancún only.', big: 'Showing the big rooms only — the bullring, the arena and the two grounds.' },
+    phrases: { all: 'Showing everything.', none: 'Showing nothing yet — open Filter and pick some venues.', neighborhood: 'Showing Cancún only.', big: 'Showing the big venues only — the bullring, the arena and the two grounds.' },
   };
 
   // Mexico's public holidays (app.js holidaysFor reads this instead of its US
