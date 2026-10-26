@@ -79,6 +79,7 @@
   // a room with no row of its own lands in 'Elsewhere in Cancún'.
   var VENUES = {
     'Teatro de Cancún': { // the city's theatre, 856 seats, in the Hotel Zone at km 4.5 beside the Embarcadero — comedy, tributes, ballet, the touring plays; its own site is a front for TusBoletos
+      geo: [21.16959, -86.82709],
       capacity: 856,
       type: 'arts',
       cssVar: '--v-tdc',
@@ -88,6 +89,7 @@
       alias: /teatro de canc[uú]n/i,
     },
     'Plaza de Toros Cancún': { // the 1988 bullring on Avenida Bonampak, now the concert bowl (about 6,000) — the touring Mexican acts, lucha libre; sells on eticket
+      geo: [21.15012, -86.82108],
       capacity: 6000,
       type: 'concert',
       cssVar: '--v-toros',
@@ -97,6 +99,7 @@
       alias: /plaza de toros/i,
     },
     'Teatro de la Ciudad': { // the city's own hall on Avenida Tulum, 650 seats, opened September 2024 (Instituto de la Cultura y las Artes)
+      geo: [21.1592, -86.8318],
       capacity: 650,
       type: 'arts',
       cssVar: '--v-ciudad',
@@ -124,6 +127,7 @@
       alias: /\bstoa\b/i,
     },
     'Estadio Beto Ávila': { // the Tigres' ballpark on Avenida Kabah, about 9,000, rebuilt after Wilma — the LMB season April to August
+      geo: [21.15248, -86.83676],
       capacity: 9000,
       type: 'sports',
       cssVar: '--v-beto',
@@ -133,6 +137,7 @@
       alias: /beto [aá]vila/i,
     },
     'Estadio Andrés Quintana Roo': { // the 17,000-seat football stadium — Cancún FC in the Liga de Expansión
+      geo: [21.15095, -86.83842],
       capacity: 17289,
       type: 'sports',
       cssVar: '--v-aqr',
@@ -142,6 +147,7 @@
       alias: /andr[eé]s quintana roo/i,
     },
     'Poliforum Benito Juárez': { // the city arena on the airport road (basketball 4,800, concerts 6,000) — El Calor's home; the LNBP schedule supplies the home games, nothing else lists the room yet
+      geo: [20.63493, -87.09554],
       capacity: 6000,
       type: 'sports',
       cssVar: '--v-poli',
@@ -151,11 +157,13 @@
       alias: /polif[oó]rum/i,
     },
     'Elsewhere in Cancún': { // every room the ticketers name that has no row of its own (a hotel ballroom, a club, a one-off hall) folds here — one row, not one per room (the Everett pattern, Steve 2026-10-10)
+      geo: [21.161, -86.851],
       type: 'concert',
       cssVar: '--v-else',
       color: '#7c8a96',
     },
     'Teatro de la Ciudad, Playa del Carmen': { // Playa's municipal theatre on 8a Norte — the same touring comedies and tributes a day after Cancún
+      geo: [20.65266, -87.08279],
       area: 'town',
       capacity: 500,
       type: 'arts',
@@ -243,6 +251,18 @@
     ics: { name: 'Cancún Events', short: 'Cancún Events', teams: 'Cancún home teams — every season', prodid: '-//here.events//cancun-events//EN', uidDomain: 'fosdal.net', // the UID domain the whole family issues (the shared ics test pins it)
       desc: 'Upcoming events around Cancún\\, Quintana Roo — the theatres\\, the bullring\\, the two grounds and Playa del Carmen\\, with the Tigres\' and Cancún FC\'s seasons' },
     teams: TEAMS,
+    map: { // the Map view (local-map.js; the ground drawn once by scripts/build-local-map.mjs from OpenStreetMap, committed as site/local-map.json) — every city gets one, Steve, 2026-10-26
+      kind: 'urban',
+      bbox: [20.555, -87.137, 21.25, -86.78], // south, west, north, east — every room, with a margin
+      home: [21.145, -86.86, 21.175, -86.812], // the view at first: the city's own rooms; the fit button shows the whole frame
+      roads: ['motorway', 'trunk', 'primary'],
+      tolerance: 0.8,
+      labels: [
+        { name: 'Cancún', lat: 21.161, lon: -86.851, anchor: 'middle' },
+        { name: 'Playa del Carmen', lat: 20.64628, lon: -87.08079, anchor: 'middle' },
+      ],
+    },
+    distanceUnit: 'km', // the mileage signs on the map read kilometres here
     venues: VENUES,
     feeds: FEEDS,
     defaultOn: DEFAULT_ON,
