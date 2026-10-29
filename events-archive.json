@@ -610,6 +610,28 @@
    "time": "19:30",
    "url": "https://www.tusboletos.mx/evento/una-noche-de-mente-cancun",
    "type": "arts"
+  },
+  {
+   "venue": "Elsewhere in Cancún",
+   "title": "Aire competencia de Danza Aérea",
+   "date": "2026-10-28",
+   "time": "09:00",
+   "url": "https://www.tusboletos.mx/evento/aire-competencia-de-danza-aerea-playa-del-carmen"
+  },
+  {
+   "venue": "Elsewhere in Cancún",
+   "title": "Aire competencia de Danza Aérea",
+   "date": "2026-10-28",
+   "time": "14:30",
+   "url": "https://www.tusboletos.mx/evento/aire-competencia-de-danza-aerea-playa-del-carmen"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Royal Ukrainian Ballet Presenta: \"El Lago de los Cisnes\"",
+   "date": "2026-10-28",
+   "time": "20:00",
+   "url": "https://www.tusboletos.mx/evento/royal-ukrainian-ballet-presenta-el-lago-de-los-cisnes-cancun",
+   "type": "arts"
   }
  ]
 }
