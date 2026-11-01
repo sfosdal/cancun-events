@@ -118,6 +118,7 @@
       alias: /teatro [aá]lamos/i,
     },
     'STOA Auditorio': { // a 650-seat auditorium on Avenida Álamos — plays, children's shows
+      geo: [21.1172, -86.8423], // Av. Álamos / Calle Ciricote, SM 6 — the two addresses on file sit 100 m apart; street-level, 2026-11-01
       capacity: 650,
       type: 'arts',
       cssVar: '--v-stoa',

@@ -1,53 +1,132 @@
 {
-  "_": "How to watch a network from Cancún, for the live game block (app.js renderTeamLive). Keys are regexes matched against the broadcast names a game carries (ESPN's, or channels.json clubs), case-insensitive; first match wins. The US template rows were replaced 2026-10-31. ota = the Cancún over-the-air station and its virtual channel (Mexico's virtual numbers are national; call signs from Wikipedia's list of Quintana Roo stations, which cites the IFT); stream = the services that carry it in Mexico (ViX for TUDN, Disney+ for ESPN). No pay-TV numbers: app.js prints only ota, DirecTV and Xfinity, and Cancún's providers (Izzi, Sky México, Totalplay, Megacable) have no field yet — a cable-only network (AYM Sports, Fox Sports, ESPN) shows as a plain name, or under Streaming when it has a stream list. Neither ESPN's mex.2 feed nor the LMB's statsapi schedule names broadcasters (checked 2026-10-31), so these rows only fire through clubs or future listings. A streaming-only service lists just its name.",
+  "_": "How to watch a network from Cancún, for the live game block (app.js renderTeamLive). Keys are regexes matched against the broadcast names a game carries (ESPN's, or channels.json clubs), case-insensitive; first match wins. The US template rows were replaced 2026-10-31. ota = the Cancún over-the-air station and its virtual channel (Mexico's virtual numbers are national; call signs from Wikipedia's list of Quintana Roo stations, which cites the IFT); stream = the services that carry it in Mexico (ViX for TUDN, Disney+ for ESPN). paytv = the channel number on each pay-TV provider (app.js prints \"Izzi 890\" etc. after the over-the-air line), from Selectra's provider pages checked 2026-09-08/10 plus GatoTV and InternetEnCasa for Izzi (read 2026-11-01); the providers' own guides answered bot walls, so these are third-party figures. Izzi's numbering is national (only locals vary by city) and its sports numbers conflict between sources (ESPN 508 or 896, ESPN 3 510 or 897), so Izzi has no ESPN numbers; Sky's numbers are its single 1xxx HD numbers; Totalplay's locals are the Cancún feeds (1xx is the national one) and it has carried no TUDN since 2024-12. Megacable also serves Cancún but was not asked for. Neither ESPN's mex.2 feed nor the LMB's statsapi schedule names broadcasters (checked 2026-10-31), so these rows only fire through clubs or future listings. A streaming-only service lists just its name.",
   "channels": [
     {
       "match": "^Azteca 7$|^XHAQR",
       "ota": "XHAQR 7",
-      "stream": []
+      "stream": [],
+      "paytv": {
+        "Izzi": "7",
+        "Sky": "1107",
+        "Totalplay": "7"
+      }
     },
     {
       "match": "^Azteca Uno$|^Azteca 1$|^XHCCQ",
       "ota": "XHCCQ 1",
-      "stream": []
+      "stream": [],
+      "paytv": {
+        "Izzi": "1",
+        "Sky": "1101",
+        "Totalplay": "1"
+      }
     },
     {
       "match": "^Las Estrellas$|^XHCCN",
       "ota": "XHCCN 2",
-      "stream": []
+      "stream": [],
+      "paytv": {
+        "Izzi": "102",
+        "Sky": "1102",
+        "Totalplay": "2"
+      }
     },
     {
       "match": "^Canal 5$|^XHQRO",
       "ota": "XHQRO 5",
-      "stream": []
+      "stream": [],
+      "paytv": {
+        "Izzi": "105",
+        "Sky": "1105",
+        "Totalplay": "5"
+      }
     },
     {
       "match": "^Imagen( TV| Televisi[oó]n)?$|^XHCTCN",
       "ota": "XHCTCN 3",
       "stream": [],
-      "note": "the LMB's free-to-air partner from June 2026 (three seasons, Excélsior 2026-06-06)"
+      "note": "the LMB's free-to-air partner from June 2026 (three seasons, Excélsior 2026-06-06)",
+      "paytv": {
+        "Sky": "1103",
+        "Totalplay": "3"
+      }
     },
     {
       "match": "^TUDN$",
       "stream": [
         "ViX"
-      ]
+      ],
+      "paytv": {
+        "Izzi": "890",
+        "Sky": "1547"
+      }
     },
     {
       "match": "^ViX( Premium)?$",
       "stream": []
     },
     {
-      "match": "^ESPN( ?[234])?$|^ESPN/Disney\\+$",
+      "match": "^ESPN$|^ESPN/Disney\\+$",
+      "paytv": {
+        "Sky": "1553",
+        "Totalplay": "513"
+      },
       "stream": [
         "Disney+"
       ]
     },
     {
+      "match": "^ESPN ?2$",
+      "paytv": {
+        "Sky": "1550",
+        "Totalplay": "514"
+      },
+      "stream": [
+        "Disney+"
+      ]
+    },
+    {
+      "match": "^ESPN ?3$",
+      "paytv": {
+        "Sky": "1559",
+        "Totalplay": "515"
+      },
+      "stream": [
+        "Disney+"
+      ]
+    },
+    {
+      "match": "^ESPN ?4$",
+      "stream": [
+        "Disney+"
+      ]
+    },
+    {
+      "match": "^FOX$",
+      "paytv": {
+        "Izzi": "1551",
+        "Sky": "1551",
+        "Totalplay": "526"
+      },
+      "stream": [],
+      "note": "the pay channel that replaced Fox Sports México on Izzi and Sky 2026-08-30 (Récord 2026-08-29, Señal News 2026-08-31); Fox Sports left Totalplay 2026-10-23 (Por Esto)"
+    },
+    {
+      "match": "^AYM( Sports)?$",
+      "paytv": {
+        "Totalplay": "576"
+      },
+      "stream": [],
+      "note": "Cancún FC's Liga de Expansión games; Sky's 1565 clashes with FOX+ between sources, Izzi lists it without a number"
+    },
+    {
       "match": "^Claro Sports$",
       "stream": [
         "free at clarosports.com"
-      ]
+      ],
+      "paytv": {
+        "Totalplay": "521"
+      }
     },
     {
       "match": "Disney\\+",
