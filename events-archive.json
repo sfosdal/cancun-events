@@ -682,6 +682,13 @@
    "time": "20:00:00",
    "url": "https://www.cancunfc.mx/",
    "type": "sports"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "El Quinto Paso",
+   "date": "2026-11-01",
+   "time": "18:00",
+   "url": "https://www.tusboletos.mx/evento/el-quinto-paso-cancun"
   }
  ]
 }
