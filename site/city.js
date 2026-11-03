@@ -254,6 +254,7 @@
     teams: TEAMS,
     map: { // the Map view (local-map.js; the ground drawn once by scripts/build-local-map.mjs from OpenStreetMap, committed as site/local-map.json) — every city gets one, Steve, 2026-10-26
       kind: 'urban',
+      boundary: { osm: 17611454 }, // the city line, always drawn (Steve, 2026-11-02): OpenStreetMap's boundary relation for Cancún
       bbox: [20.555, -87.137, 21.25, -86.78], // south, west, north, east — every room, with a margin
       home: [21.145, -86.86, 21.175, -86.812], // the view at first: the city's own rooms; the fit button shows the whole frame
       roads: ['motorway', 'trunk', 'primary'],
