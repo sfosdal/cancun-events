@@ -689,6 +689,14 @@
    "date": "2026-11-01",
    "time": "18:00",
    "url": "https://www.tusboletos.mx/evento/el-quinto-paso-cancun"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "The Opera Locos",
+   "date": "2026-11-04",
+   "time": "19:00",
+   "url": "https://www.tusboletos.mx/evento/the-opera-de-locos-cancun",
+   "type": "concert"
   }
  ]
 }
