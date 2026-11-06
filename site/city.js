@@ -44,8 +44,8 @@
     // Tigres de Quintana Roo, Liga Mexicana de Béisbol (Zona Sur), Estadio Beto Ávila — the season runs April to August, the playoffs into September
     { slug: 'tigres', label: 'Tigres', name: 'Tigres de Quintana Roo', abbr: 'QR', re: /\btigres\b/i, sport: 'baseball', venue: 'Estadio Beto Ávila', colors: ['#f47a20', '#1d1d1b'],
       season: { kind: 'mlb', id: 569, sportId: 23 }, form: { kind: 'milb', id: 569, league: 125, leagueName: 'Mexican League' },
-      inject: { url: 'https://www.tigresqr.com/' }, // no ticket feed carries the ballpark; the league's schedule supplies the home stands
-      logo: 'https://www.mlbstatic.com/team-logos/569.svg', schedule: 'https://www.tigresqr.com/',
+      inject: { url: 'https://www.tigresqroo.com/calendario' }, // no ticket feed carries the ballpark; the league's schedule supplies the home stands
+      logo: 'https://www.mlbstatic.com/team-logos/569.svg', schedule: 'https://www.tigresqroo.com/calendario',
       club: 'Tigres de Quintana Roo', opens: 'April', wiki: { title: 'Tigres de Quintana Roo', club: true } },
     // Cancún FC, Liga de Expansión MX (the second division; Apertura August–December, Clausura January–May), Estadio Andrés Quintana Roo
     { slug: 'cancunfc', label: 'Cancún FC', name: 'Cancún FC', abbr: 'CAN', re: /canc[uú]n fc/i, sport: 'soccer', venue: 'Estadio Andrés Quintana Roo', colors: ['#c60000', '#111111'],
@@ -133,8 +133,8 @@
       type: 'sports',
       cssVar: '--v-beto',
       color: '#c2521f',
-      url: 'https://www.tigresqr.com/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.tigresqr.com&sz=128',
+      url: 'https://www.tigresqroo.com/calendario',
+      icon: 'https://www.google.com/s2/favicons?domain=www.tigresqroo.com&sz=128',
       alias: /beto [aá]vila/i,
     },
     'Estadio Andrés Quintana Roo': { // the 17,000-seat football stadium — Cancún FC in the Liga de Expansión
