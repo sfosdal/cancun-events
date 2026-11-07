@@ -114,7 +114,6 @@
       cssVar: '--v-alamos',
       color: '#9e6b2e',
       url: 'https://www.facebook.com/TeatroAlamos/',
-      icon: 'marks/venues/facebook.com.png',
       alias: /teatro [aá]lamos/i,
     },
     'STOA Auditorio': { // a 650-seat auditorium on Avenida Álamos — plays, children's shows
@@ -124,7 +123,6 @@
       cssVar: '--v-stoa',
       color: '#9e2e7a',
       url: 'https://x.com/auditoriostoa',
-      icon: 'marks/venues/x.com.png',
       alias: /\bstoa\b/i,
     },
     'Estadio Beto Ávila': { // the Tigres' ballpark on Avenida Kabah, about 9,000, rebuilt after Wilma — the LMB season April to August
@@ -154,7 +152,6 @@
       cssVar: '--v-poli',
       color: '#2e5a9e',
       url: 'https://www.facebook.com/332517270166314/',
-      icon: 'marks/venues/facebook.com.png',
       alias: /polif[oó]rum/i,
     },
     'Elsewhere in Cancún': { // every room the ticketers name that has no row of its own (a hotel ballroom, a club, a one-off hall) folds here — one row, not one per room (the Everett pattern, Steve 2026-10-10)
@@ -171,7 +168,6 @@
       cssVar: '--v-playa',
       color: '#2e9e8b',
       url: 'https://www.tusboletos.mx/eventos',
-      icon: 'marks/venues/tusboletos.mx.png',
       alias: /teatro de la ciudad.*playa/i,
     },
   };
