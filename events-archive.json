@@ -705,6 +705,14 @@
    "time": "20:00:00",
    "url": "https://www.cancunfc.mx/",
    "type": "sports"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "World Ballet Tour \"El Cascanueces\" - Cancún - 6 de noviembre",
+   "date": "2026-11-06",
+   "time": "20:00",
+   "url": "https://www.tusboletos.mx/evento/world-ballet-tour-el-cascanueces-cancun-6-de-noviembre",
+   "type": "arts"
   }
  ]
 }
