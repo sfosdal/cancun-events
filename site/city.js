@@ -85,7 +85,7 @@
       cssVar: '--v-tdc',
       color: '#2e8f9e',
       url: 'https://www.teatrodecancun.com.mx/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.teatrodecancun.com.mx&sz=128',
+      icon: 'marks/venues/teatrodecancun.com.mx.png',
       alias: /teatro de canc[uú]n/i,
     },
     'Plaza de Toros Cancún': { // the 1988 bullring on Avenida Bonampak, now the concert bowl (about 6,000) — the touring Mexican acts, lucha libre; sells on eticket
@@ -95,7 +95,7 @@
       cssVar: '--v-toros',
       color: '#9e2e3e',
       url: 'https://plazadetoroscancun.com.mx/',
-      icon: 'https://www.google.com/s2/favicons?domain=plazadetoroscancun.com.mx&sz=128',
+      icon: 'marks/venues/plazadetoroscancun.com.mx.png',
       alias: /plaza de toros/i,
     },
     'Teatro de la Ciudad': { // the city's own hall on Avenida Tulum, 650 seats, opened September 2024 (Instituto de la Cultura y las Artes)
@@ -105,7 +105,7 @@
       cssVar: '--v-ciudad',
       color: '#6a2e9e',
       url: 'https://iculturacancun.com/teatro-de-la-ciudad/',
-      icon: 'https://www.google.com/s2/favicons?domain=iculturacancun.com&sz=128',
+      icon: 'marks/venues/iculturacancun.com.png',
       alias: /^teatro de la ciudad(?: canc[uú]n)?$/i, // Playa del Carmen has a Teatro de la Ciudad too — its row is below
     },
     'Teatro Alamos': { // a private hall in the Álamos district, about 800 — rock and pop tours, stand-up
@@ -114,7 +114,7 @@
       cssVar: '--v-alamos',
       color: '#9e6b2e',
       url: 'https://www.facebook.com/TeatroAlamos/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.facebook.com&sz=128',
+      icon: 'marks/venues/facebook.com.png',
       alias: /teatro [aá]lamos/i,
     },
     'STOA Auditorio': { // a 650-seat auditorium on Avenida Álamos — plays, children's shows
@@ -124,7 +124,7 @@
       cssVar: '--v-stoa',
       color: '#9e2e7a',
       url: 'https://x.com/auditoriostoa',
-      icon: 'https://www.google.com/s2/favicons?domain=x.com&sz=128',
+      icon: 'marks/venues/x.com.png',
       alias: /\bstoa\b/i,
     },
     'Estadio Beto Ávila': { // the Tigres' ballpark on Avenida Kabah, about 9,000, rebuilt after Wilma — the LMB season April to August
@@ -134,7 +134,7 @@
       cssVar: '--v-beto',
       color: '#c2521f',
       url: 'https://www.tigresqroo.com/calendario',
-      icon: 'https://www.google.com/s2/favicons?domain=www.tigresqroo.com&sz=128',
+      icon: 'marks/venues/tigresqroo.com.png',
       alias: /beto [aá]vila/i,
     },
     'Estadio Andrés Quintana Roo': { // the 17,000-seat football stadium — Cancún FC in the Liga de Expansión
@@ -144,7 +144,7 @@
       cssVar: '--v-aqr',
       color: '#2e9e4a',
       url: 'https://www.cancunfc.mx/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.cancunfc.mx&sz=128',
+      icon: 'marks/venues/cancunfc.mx.png',
       alias: /andr[eé]s quintana roo/i,
     },
     'Poliforum Benito Juárez': { // the city arena on the airport road (basketball 4,800, concerts 6,000) — El Calor's home; the LNBP schedule supplies the home games, nothing else lists the room yet
@@ -154,7 +154,7 @@
       cssVar: '--v-poli',
       color: '#2e5a9e',
       url: 'https://www.facebook.com/332517270166314/',
-      icon: 'https://www.google.com/s2/favicons?domain=www.facebook.com&sz=128',
+      icon: 'marks/venues/facebook.com.png',
       alias: /polif[oó]rum/i,
     },
     'Elsewhere in Cancún': { // every room the ticketers name that has no row of its own (a hotel ballroom, a club, a one-off hall) folds here — one row, not one per room (the Everett pattern, Steve 2026-10-10)
@@ -171,7 +171,7 @@
       cssVar: '--v-playa',
       color: '#2e9e8b',
       url: 'https://www.tusboletos.mx/eventos',
-      icon: 'https://www.google.com/s2/favicons?domain=www.tusboletos.mx&sz=128',
+      icon: 'marks/venues/tusboletos.mx.png',
       alias: /teatro de la ciudad.*playa/i,
     },
   };
