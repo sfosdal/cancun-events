@@ -713,6 +713,37 @@
    "time": "20:00",
    "url": "https://www.tusboletos.mx/evento/world-ballet-tour-el-cascanueces-cancun-6-de-noviembre",
    "type": "arts"
+  },
+  {
+   "venue": "Teatro de la Ciudad, Playa del Carmen",
+   "title": "FMG International Pro AM México",
+   "date": "2026-11-07",
+   "time": "10:00",
+   "url": "https://www.tusboletos.mx/evento/fmg-international-pro-am-mexico-playa-del-carmen",
+   "type": "sports"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "World Ballet Tour \"El Cascanueces\" - Cancún - 7 de noviembre",
+   "date": "2026-11-07",
+   "time": "19:00",
+   "url": "https://www.tusboletos.mx/evento/world-ballet-tour-el-cascanueces-cancun-7-de-noviembre",
+   "type": "arts"
+  },
+  {
+   "venue": "Teatro Alamos",
+   "title": "Mi Cristo Roto con Alberto Mayagoitia en Cancún",
+   "date": "2026-11-07",
+   "time": "19:30",
+   "url": "https://www.tusboletos.mx/evento/mi-cristo-roto-con-alberto-mayagoitia-cancun"
+  },
+  {
+   "venue": "Teatro de la Ciudad, Playa del Carmen",
+   "title": "FMG International Pro AM México",
+   "date": "2026-11-07",
+   "time": "21:00",
+   "url": "https://www.tusboletos.mx/evento/fmg-international-pro-am-mexico-playa-del-carmen",
+   "type": "sports"
   }
  ]
 }
