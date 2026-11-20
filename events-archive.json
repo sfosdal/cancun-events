@@ -809,6 +809,36 @@
    "time": "19:30",
    "url": "https://www.tusboletos.mx/evento/una-noche-de-mente-cancun-18-de-noviembre",
    "type": "arts"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Perderá la cabeza",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "url": "https://www.tusboletos.mx/evento/perdera-la-cabeza-cancun",
+   "type": "arts"
+  },
+  {
+   "venue": "Teatro de la Ciudad, Playa del Carmen",
+   "title": "Guerra de Chistes",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "url": "https://www.tusboletos.mx/evento/guerra-de-chistes-playa-del-carmen"
+  },
+  {
+   "venue": "Teatro Alamos",
+   "title": "Si me awité (pero en Cancún)",
+   "date": "2026-11-19",
+   "time": "21:00",
+   "url": "https://www.tusboletos.mx/evento/si-me-awite-pero-en-cancun-cancun"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Obsesión AME",
+   "date": "2026-11-19",
+   "time": "21:30",
+   "url": "https://www.tusboletos.mx/evento/obsesion-ame-cancun",
+   "type": "arts"
   }
  ]
 }
