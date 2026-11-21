@@ -839,6 +839,35 @@
    "time": "21:30",
    "url": "https://www.tusboletos.mx/evento/obsesion-ame-cancun",
    "type": "arts"
+  },
+  {
+   "venue": "Elsewhere in Cancún",
+   "title": "Foro y Talleres de la Industria Audiovisual",
+   "date": "2026-11-20",
+   "time": "09:00",
+   "url": "https://www.tusboletos.mx/evento/foro-y-talleres-de-la-industria-audiovisual-playa-del-carmen"
+  },
+  {
+   "venue": "Elsewhere in Cancún",
+   "title": "Foro y Talleres de la Industria Audiovisual",
+   "date": "2026-11-20",
+   "time": "18:00",
+   "url": "https://www.tusboletos.mx/evento/foro-y-talleres-de-la-industria-audiovisual-playa-del-carmen"
+  },
+  {
+   "venue": "Teatro Alamos",
+   "title": "Nicho Hinojosa, ¡Claro Que Sí! Gira 2026",
+   "date": "2026-11-20",
+   "time": "20:30",
+   "url": "https://www.tusboletos.mx/evento/nicho-hinojosa-claro-que-si-gira-2026-cancun"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Más Allá de las Estrellas",
+   "date": "2026-11-20",
+   "time": "20:30",
+   "url": "https://www.tusboletos.mx/evento/mas-alla-de-las-estrellas-cancun",
+   "type": "concert"
   }
  ]
 }
