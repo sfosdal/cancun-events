@@ -1,17 +1,17 @@
 {
  "links": {
-  "https://plazadetoroscancun.com.mx/": "2026-11-20",
-  "https://www.eticket.mx/masinformacion.aspx?idevento=34579": "2026-11-20",
-  "https://www.eticket.mx/masinformacion.aspx?idevento=35594": "2026-11-20",
-  "https://www.teatrodecancun.com.mx/": "2026-11-20"
+  "https://plazadetoroscancun.com.mx/": "2026-11-23",
+  "https://www.eticket.mx/masinformacion.aspx?idevento=34579": "2026-11-23",
+  "https://www.eticket.mx/masinformacion.aspx?idevento=35594": "2026-11-23",
+  "https://www.teatrodecancun.com.mx/": "2026-11-23"
  },
  "guard": {
-  "https://iculturacancun.com/teatro-de-la-ciudad/": "2026-11-19",
-  "https://lnbp.mx/calendar.html": "2026-11-19",
-  "https://plazadetoroscancun.com.mx/": "2026-11-19",
-  "https://www.cancunfc.mx/": "2026-11-19",
-  "https://www.eticket.mx/": "2026-11-19",
-  "https://www.teatrodecancun.com.mx/": "2026-11-19",
-  "https://www.tigresqroo.com/calendario": "2026-11-19"
+  "https://iculturacancun.com/teatro-de-la-ciudad/": "2026-11-23",
+  "https://lnbp.mx/calendar.html": "2026-11-23",
+  "https://plazadetoroscancun.com.mx/": "2026-11-23",
+  "https://www.cancunfc.mx/": "2026-11-23",
+  "https://www.eticket.mx/": "2026-11-23",
+  "https://www.teatrodecancun.com.mx/": "2026-11-23",
+  "https://www.tigresqroo.com/calendario": "2026-11-23"
  }
 }

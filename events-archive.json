@@ -876,6 +876,22 @@
    "time": "20:00",
    "url": "https://www.tusboletos.mx/evento/dont-stop-the-soud-of-resilience-cancun",
    "type": "concert"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Como Entrenar a tu Dragón Sinfónico",
+   "date": "2026-11-22",
+   "time": "13:30",
+   "url": "https://www.tusboletos.mx/evento/como-entrenar-a-tu-dragon-sinfonico-cancun",
+   "type": "arts"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Concierto Sinfónico: Tributo a Interstellar",
+   "date": "2026-11-22",
+   "time": "17:00",
+   "url": "https://www.tusboletos.mx/evento/concierto-sinfonico-tributo-interstellar-cancun",
+   "type": "concert"
   }
  ]
 }
