@@ -892,6 +892,22 @@
    "time": "17:00",
    "url": "https://www.tusboletos.mx/evento/concierto-sinfonico-tributo-interstellar-cancun",
    "type": "concert"
+  },
+  {
+   "venue": "Teatro de Cancún",
+   "title": "Huntrix Una noche de Terror",
+   "date": "2026-11-23",
+   "time": "18:00",
+   "url": "https://www.tusboletos.mx/evento/huntrix-una-noche-de-terror-cancun",
+   "type": "arts"
+  },
+  {
+   "venue": "Teatro Alamos",
+   "title": "FIM Cancún, Concierto Guitarra Iberoamericana (Épsilon Dúo | Elías García y Pepe Alcocer)",
+   "date": "2026-11-23",
+   "time": "20:00",
+   "url": "https://www.tusboletos.mx/evento/fim-cancun-concierto-guitarra-iberoamericana-epsilon-duo-elias-garcia-y-pepe-alcocer-cancun",
+   "type": "concert"
   }
  ]
 }
